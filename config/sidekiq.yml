@@ -1,0 +1,12 @@
+:verbose: false
+:pidfile: ./tmp/pids/sidekiq.pid
+:logfile: ./log/sidekiq/log.log
+:concurrency: 10
+:timeout: 30
+:queues:
+  - post_send
+  - post_prepare
+  - default
+  - mailers
+  - rss_feeds
+  - import_content_library_to_c_p

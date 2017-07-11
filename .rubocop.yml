@@ -1,0 +1,36 @@
+AllCops:
+  TargetRubyVersion: 2.2
+  Exclude:
+      - 'test/**/*'
+      - 'db/**/*'
+      - 'config/**/*'
+      - 'bin/**/*'
+      - 'Gemfile'
+      - 'Capfile'
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  ExtraDetails: true
+
+Rails:
+  Enabled: true
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 25
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 25
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Style/RaiseArgs:
+  Enabled: false
